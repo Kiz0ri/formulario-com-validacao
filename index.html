@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest - Formulário com validação</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="hero">
+        <div class="informacoes">
+            <h2 class="titulo">FICOU COM DÚVIDA? <br> NOS MANDE UMA MENSAGEM!</h2>
+            <p class="texto">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato
+                em menos de 24h.</p>
+        </div>
+        <main class="contenedor-do-formulario">
+            <form class="formulario" action="index.html">
+
+                <!-- Eu tente fazer com label, mais não sei pq no dio certo no JS, mesmo asim não tente muito, só fiz um pequeno teste. Tem jeito de fazer com label? -->
+
+                <input class="inputs" type="text" name="nome" id="nome" placeholder="Nome completo *">
+                <span class="campo-obrigatorio">campo obrigatório</span>
+
+                <input class="inputs" type="email" name="email" id="email" placeholder="Email *">
+                <span class="campo-obrigatorio">campo obrigatório</span>
+
+                <input class="inputs" type="tel" name="telefone" id="telefone" placeholder="Telefone *">
+                <span class="campo-obrigatorio">campo obrigatório</span>
+
+                <textarea class="inputs mensagem" name="mensagem" id="mensagem" placeholder="Mensagem *"></textarea>
+                <span class="campo-obrigatorio">campo obrigatório</span>
+
+                <p class="indicacao">*campos obrigatórios</p>
+
+                <input class="btn-enviar" type="button" value="Enviar" id="btn-enviar">
+
+            </form>
+        </main>
+    </section>
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+/* O estilo é pra uma tela de 1440x800. Não sei se é preciso fazer o responsive, não fiz nesta Quest, mais eu posso fazer, e faré ele pela minha conta só pra estudar. Nesta Quest o mais importante eu acho que é o JS, ne?*/
+
+body {
+    height: 100vh;
+    font-weight: 400;
+    font-size: 2.7rem;
+}
+
+.hero {
+    height: 100%;
+    background-image: url('../images/bg-repeat.jpg');
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero .informacoes {
+    max-width: 640px;
+    height: 219px;
+}
+
+.hero .informacoes .titulo {
+    font-weight: 900;
+    font-size: 3.6rem;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.hero .informacoes .texto {
+    font-weight: 400;
+    font-size: 2.7rem;
+    color: #FFFFFF;
+}
+
+.hero .contenedor-do-formulario .formulario {
+    height: 750px;
+    width: 680px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px;
+    position: relative;
+}
+
+.hero .contenedor-do-formulario .inputs {
+    width: 100%;
+    height: 70px;
+    border-radius: 9px;
+    margin-bottom: 14px;
+    font-size: 2.4rem;
+    padding: 10px;
+}
+
+.hero .contenedor-do-formulario .mensagem {
+    height: 200px;
+    resize: none;
+}
+
+.hero .contenedor-do-formulario .indicacao {
+    font-size: 3rem;
+    position: absolute;
+    left: 20px;
+    bottom: 180px;
+}
+
+.hero .contenedor-do-formulario .btn-enviar {
+    height: 100px;
+    width: 100%;
+    background-color: #3CCC87;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #FFFFFF;
+    margin-top: 80px;
+    border-radius: 9px;
+    border: none;
+    margin-bottom: 0;
+}
+
+.campo-obrigatorio {
+    color: #F52E2E;
+    font-size: 1.4rem;
+    opacity: 0;
+    transform: translate(-245px, -12px);
+}
+
+/* Classes para Javascript */
+.esta-preenchido {
+    border: 1px solid #00C22B;
+}
+
+.nao-esta-preenchido {
+    border: 1px solid #F52E2E;
+}
+
+.mostrar-campo-obrigatorio{
+    opacity: 1;
+}
